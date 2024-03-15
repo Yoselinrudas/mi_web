@@ -92,13 +92,12 @@ header nav ul li a{
 section{
     display: block;
 }
- .seccion-1{
+.seccion-1{
     background-color: rgba(227, 244, 232, 0.945);
     display:flex;
     justify-content: center;
     align-items: center;
-    padding:1.5em;
-    
+    padding:1.5em;    
 }
 
 .seccion-2 img{
@@ -170,47 +169,8 @@ a i.fa-solid.fa-heart.fixed{
     cursor: pointer;
     display: none;
 }
-/* ------------- CSS General ------------- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    color: #5d6063;
-    background-color: #eaedf0;
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 16px;
-  }
-  
-  /* ------------- Encabezado Contacto ------------- */
-  
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-header {
-    text-align: center;
-    background-color: #f6f7f8;
-    border: 1px solid #d6d9dc;
-    border-radius: 3px;
-  
-    width: 80%;
-    margin: 10px auto;
-    padding: 50px;
-  }
-  
-  .form-header h1 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  /* ------------- Formulario ------------- */
-  
-  .formulario {
+
+.formulario {
     background-color: #f6f7f8;
     border: 1px solid #d6d9dc;
     border-radius: 3px;
@@ -218,8 +178,7 @@ a i.fa-solid.fa-heart.fixed{
     width: 80%;
     padding: 50px;
     margin: 30px 0 40px 0;
-  }
-
+}
   /* ------------- Campos del Formulario ------------- */
 
 .form-row {
@@ -228,24 +187,24 @@ a i.fa-solid.fa-heart.fixed{
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-  }
+}
   
-  .form-row input[type="text"],
-  .form-row input[type="email"] {
+.form-row input[type="text"],
+.form-row input[type="email"] {
     background-color: #bdbdbd;
     border: 0;
     border-radius: 6px;
     width: 100%;
     padding: 7px;
     font-size: 14px;
-  }
+}
   
-  .form-row label {
+.form-row label {
     margin-bottom: 3px;
     text-align: initial;
-  }
+}
 
-  .form-row textarea {
+.form-row textarea {
     font-family: "Helvetica", "Arial", sans-serif;
     font-size: 14px;
   
@@ -262,8 +221,8 @@ a i.fa-solid.fa-heart.fixed{
   
   
     width: 100%;
-  }
-  .form-row button {
+}
+.form-row button {
     font-size: 16px;
     font-weight: bold;
   
@@ -278,17 +237,18 @@ a i.fa-solid.fa-heart.fixed{
   
     padding: 10px 40px;
     cursor: pointer;
-  }
+}
   
   
-  .form-row button:hover {
+.form-row button:hover {
     background-color: #76aeed;
-  }
+}
   
   
-  .form-row button:active {
+.form-row button:active {
     background-color: #407fc7;
-  }
+}
+
 
 @media(max-width:768px){
 
@@ -302,11 +262,20 @@ a i.fa-solid.fa-heart.fixed{
         margin-bottom: 40px;
     }
     .seccion-1{
+        background-color: rgba(227, 244, 232, 0.945);
         display:flex;
         justify-content: center;
         align-items: center;
+        padding:1.5em;  
+        flex-direction: column;  
+    }
+    .seccion-3 {
+        flex-direction: column;
+        background-color: rgba(227, 244, 232, 0.945);
+        display:flex;
+        align-items:center;
         padding:1.5em;
-        
+        justify-content:space-between;
     }
     h2.fuente-acento{
         text-align: center;
@@ -343,7 +312,7 @@ a i.fa-solid.fa-heart.fixed{
         color:#2c3e50;
     }
 }
-/* ------------- Media Query para pantallas de más de 700px de resolución ------------- */
+
 @media only screen and (min-width: 700px) {
     .form-header {
       padding: 50px;
@@ -372,4 +341,7 @@ a i.fa-solid.fa-heart.fixed{
         margin-left: 120px; 
     }
 
-}
+  }
+
+
+
